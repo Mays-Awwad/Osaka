@@ -1,0 +1,32 @@
+:root{
+    --mainColor:rgb(255, 32, 110);
+    --mainFont:"Open Sans", sans-serif;
+}
+
+body{
+    font-family: var(--mainFont);
+}
+/* هاد كلاس خاص فيي */
+.text__primary{
+    color:var(--mainColor);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:var(--mainColor)
+}
+.navbar .nav-link{
+    color:#fff;
+}
+/*
+.hero{
+    height:calc(100vh - 56px);
+}
+*/
+
+.hero {
+    background-image: url(../image/hero/bg.jpg);
+    background-size: cover;
+    background-position: center -100px;
+}
+.hero .hero-content h1{
+    text-transform: capitalize;
+}
