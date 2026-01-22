@@ -16,13 +16,10 @@ body{
 .navbar .nav-link{
     color:#fff;
 }
-/*
-.hero{
-    height:calc(100vh - 56px);
-}
-*/
+
 
 .hero {
+    background-repeat: no-repeat;
     background-image: url(../image/hero/bg.jpg);
     background-size: cover;
     background-position: center -100px;
@@ -47,4 +44,72 @@ body{
 
 .portfolio .nav-tabs{
     border-bottom: none;
+}
+/*
+.slider .carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    height:20px;
+    width:20px;
+    background-color: var(--mainColor);
+}
+
+*/
+.testimonials .carousel-indicators{
+bottom:-70px;
+}
+.testimonials .carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    height:5px;
+    width:5px;
+    background-color: rgb(31, 30, 30);
+
+}
+
+.carousel-inner,
+.carousel-item,
+.testimonial {
+  overflow: visible !important;
+}
+.carousel-inner{
+margin-top:150px;
+}
+.testimonial{
+    padding-top:40px;
+}
+.testimonial .image{
+    position:absolute;
+     top:-70px;
+     /*
+     z-index:10;  
+     */
+}
+
+.testimonial img{
+    width:100px;
+    border-radius: 50%;
+    box-shadow: 0 8px 30px rgba(61, 60, 60, 0.15);
+}
+
+.testimonials .testimonial h2{
+font-size:16px;
+}
+
+.testimonials .testimonial h3{
+font-size:12px;
+}
+.testimonials .testimonial .sub-title{
+    position: relative;
+}
+.testimonials .testimonial .sub-title::after{
+    content:'';
+    background-color: var(--mainColor);
+    position:absolute;
+    height:1px;
+    width:35%;
+   bottom: -4px;
+   left:35px;
+
+}
+.testimonials .testimonial .sub-title h2{
+    color:rgb(85, 85, 85);
 }
